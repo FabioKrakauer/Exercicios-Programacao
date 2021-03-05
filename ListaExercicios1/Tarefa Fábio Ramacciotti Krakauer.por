@@ -103,7 +103,7 @@ programa
 
 		escreva("Seu novo saldo é R$", valorAjustado, "\n")
 	}
-}
+} 
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
