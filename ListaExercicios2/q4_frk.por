@@ -3,7 +3,11 @@ programa
 	
 	funcao inicio()
 	{
-		real precoFabrica, lucro, impostos, precoFinal
+		real precoFabrica
+		real lucro
+		real impostos
+		real precoFinal
+		
 		escreva("Digite o preço de fábrica\n")
 		leia(precoFabrica)
 		escreva("Qual é o porcentual do lucro do distribuidor?\n")
@@ -26,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 527; 
+ * @POSICAO-CURSOR = 102; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
