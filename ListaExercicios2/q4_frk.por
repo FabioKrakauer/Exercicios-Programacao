@@ -16,7 +16,7 @@ programa
 		leia(impostos)
 
 		lucro = precoFabrica * lucro / 100
-		impostos = precoFabrica * lucro / 100
+		impostos = precoFabrica * impostos / 100
 		precoFinal = precoFabrica + lucro + impostos
 		
 		escreva("\nO distribuidor tera um lucro de ", lucro)
@@ -30,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 102; 
+ * @POSICAO-CURSOR = 380; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
