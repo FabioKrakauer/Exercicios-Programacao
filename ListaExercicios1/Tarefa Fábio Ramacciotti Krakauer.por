@@ -18,10 +18,10 @@ programa
 				transformarMetrosEmCm()
 				pare
 			caso 4:
-				reajusteParaMais()
+				reajustePorcentualFixo()
 				pare
 			caso 5:
-				reajusteParaMenos()
+				reajustePorcentualDinamico()
 				pare
 			caso contrario:
 				escreva("Opção inválida")
@@ -71,14 +71,15 @@ programa
 		escreva(metros, " metros é igual a: ", centimetros, " cm")
 	}
 	// Lição 4
-	funcao reajusteParaMais() {
+	funcao reajustePorcentualFixo() {
 		real saldo
 		real saldoExtra
 		real reajuste
+		const inteiro porcentagem = 15
 		
 		escreva("Digite seu saldo\n")
 		leia(saldo)
-		saldoExtra = (saldo / 100) * 15
+		saldoExtra = (saldo / 100) * porcentagem
 
 		reajuste = saldo + saldoExtra
 
@@ -86,22 +87,20 @@ programa
 		
 	}
 	// Lição 5
-	funcao reajusteParaMenos() {
-		real saldo
-		real saldoExtra
-		inteiro reajuste
-		real valorAjustado
+	funcao reajustePorcentualDinamico() {
+		real saldo, saldoExtra, reajuste, valorReajuste, valorReajustado
 		
 		escreva("Digite seu saldo \n")
 		leia(saldo)
 		escreva("Digite o valor do reajuste em porcentagem \n")
 		leia(reajuste)
 		
-		saldoExtra = (saldo / 100) * reajuste
+		valorReajuste = (saldo / 100) * reajuste
 		
-		valorAjustado = saldo - saldoExtra
+		valorReajustado = saldo + valorReajuste
 
-		escreva("Seu novo saldo é R$", valorAjustado, "\n")
+		escreva("Seu novo saldo é R$", valorReajustado, "\n")
+		escreva("O valor do reajuste foi de R$", valorReajuste) 
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -109,7 +108,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1542; 
+ * @POSICAO-CURSOR = 2149; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
