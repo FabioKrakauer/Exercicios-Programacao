@@ -9,7 +9,7 @@ programa
 		inteiro quantidadeHomens = 0
 		inteiro quantidadeMulheres = 0
 
-		inteiro maiorAltura = 0, menorAltura = 1000
+		inteiro maiorAltura, menorAltura
 
 		real mediaAlturaHomens = 0.0, mediaAlturaMulheres = 0.0
 
@@ -19,6 +19,8 @@ programa
 		escreva("Digite 5 sexos (M ou F)\n")
 		leia(sexo1, sexo2, sexo3, sexo4, sexo5)
 
+		menorAltura = altura1
+		maiorAltura = altura1
 		se(sexo1 == 'F' ou sexo1 == 'f'){
 			quantidadeMulheres++
 			mediaAlturaMulheres += altura1
@@ -91,8 +93,17 @@ programa
 			menorAltura = altura5
 		}
 
-		mediaAlturaHomens = mediaAlturaHomens / quantidadeHomens
-		mediaAlturaMulheres = mediaAlturaMulheres / quantidadeMulheres
+		se(quantidadeHomens == 0) {
+			mediaAlturaHomens = 0.0
+		}senao {
+			mediaAlturaHomens = mediaAlturaHomens / quantidadeHomens
+		}
+
+		se(quantidadeMulheres == 0) {
+			mediaAlturaMulheres = 0.0
+		}senao {
+			mediaAlturaMulheres = mediaAlturaMulheres / quantidadeMulheres
+		}
 		
 		escreva("\nA maior altura do grupo é ", maiorAltura, " e a menor é ", menorAltura)
 		escreva("\nA média das alturas das MULHERES é ", mediaAlturaMulheres, " cm e a media dos homens é ", mediaAlturaHomens, " cm")
@@ -104,7 +115,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1166; 
+ * @POSICAO-CURSOR = 2202; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
