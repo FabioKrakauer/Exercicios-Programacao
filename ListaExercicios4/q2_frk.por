@@ -20,8 +20,8 @@ programa
 
 		saldo_restante = saldo
 		se(saldo_restante >= 200) {
-			notas_200 = saldo / 200
-			saldo_restante = saldo % 200
+			notas_200 = saldo_restante / 200
+			saldo_restante = saldo_restante % 200
 		}
 		se(saldo_restante >= 100) {
 			notas_100 += saldo_restante / 100
@@ -58,7 +58,7 @@ programa
 			saldo_restante = saldo_restante % 1
 		}
 
-		escreva("\nVocê precisa de notas de:")
+		escreva("\nA contagem de notas para R$", saldo, " é de:")
 		escreva("\nR$200=", notas_200)
 		escreva("\nR$100=", notas_100)
 		escreva("\nR$50=", notas_50)
@@ -74,7 +74,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 555; 
+ * @POSICAO-CURSOR = 193; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
