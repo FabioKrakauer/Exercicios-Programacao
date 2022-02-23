@@ -2,9 +2,13 @@
 
 ## Saída
 As saídas programadas são:
+
 **"parent"**: É printada pelo processo pai do sistema.
+
 **"Child proccess"**: É printado pelo processo filho.
+
 **"Process id {?}"**: É pelo processo pai indicando seu id.
+
 **"ola mundo"**: É printado pelo processo pai para encerrar o programa.
 
 ## Como executar
